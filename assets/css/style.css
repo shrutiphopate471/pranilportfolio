@@ -1,0 +1,252 @@
+.container {
+  width: 89%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-fluid {
+  padding: 0 30px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  padding: 22px 35px;
+  background-color: #ccff00 !important;
+}
+
+.navbar-nav .nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.swiper-buttons {
+
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+/* .swiper-next {
+   bottom: 0;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+.tab-content{
+  position: relative;
+} */
+/* .swiper-prev {
+  bottom: 0;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.swiper-prev:hover,
+.swiper-next:hover {
+  background: #007bff;
+} */
+
+.navbar img {
+  max-height: 32px;
+  margin-right: 8px;
+}
+
+/* .home-banner{
+  background-image: url(assets/images/2.jpg);
+  background-size: cover;
+} */
+
+.home-banner {
+  margin-top: 60px;
+}
+
+.primary-action {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+}
+
+.primary-action a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+}
+
+.primary-action :hover {
+  transform: translateY(-3px);
+  transition: all 0.6s ease;
+}
+
+.portfolio {
+  padding: 60px 0;
+  background: #f1fcc5;
+  position: relative;
+}
+
+/* .portfolio .swiper-button-next{
+  position: absolute;
+bottom: 0;
+} */
+
+.row-gap {
+  gap: 25px 0px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.portfolio-flters {
+  /* box-shadow: 2px 3px 14px #00000052; */
+  list-style: none;
+  padding: 5px 0;
+  margin: 20px 0 35px;
+  /* height: 75px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccff00;
+}
+
+.nav-pills .nav-link {
+  color: #000;
+  font-size: 0.83rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #005b31;
+  font-weight: 500;
+  background-color: transparent !important;
+}
+
+.portfolio-flters li {
+  width: 115px;
+  min-height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  /* padding: 5px 16px; */
+  margin: 5px;
+  cursor: pointer;
+  /* background: #ddd; */
+  background: #6d717521;
+
+}
+
+.portfolio-flters .active {
+  background: #6d717540;
+  color: #fff;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+  transition: all 0.4s ease;
+}
+
+.portfolio-item.hide {
+  opacity: 0;
+  transform: scale(0.8);
+  display: none;
+}
+
+.portfolio-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-wrap img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+  transition: 0.6s;
+}
+
+.portfolio-wrap:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+}
+
+.portfolio-slider {
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-wrap img {
+  border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  /* height: 20px; */
+  /* height: var(--swiper-navigation-size); */
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* font-size: 29px; */
+  justify-content: center;
+  background-color: #000;
+  border-radius: 50%;
+  width: 45px;
+  padding: 20px;
+  color: #ccff00;
+  /* width: 81px; */
+  /* color: var(--swiper-navigation-color, var(--swiper-theme-color)); */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: medium;
+}
